@@ -2,4 +2,4 @@
 [server]
 maxUploadSize = 2048
 headless = true
-enableCORS = false
+# enableCORS = false

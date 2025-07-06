@@ -8,8 +8,6 @@ services:
     envVars:
       - key: STREAMLIT_SERVER_MAXUPLOADSIZE
         value: "2048"
-      - key: STREAMLIT_SERVER_ENABLECORS
-        value: "false"
       - key: STREAMLIT_SERVER_HEADLESS
         value: "true"
       - key: STREAMLIT_BROWSER_GATHERUSAGESTATS
