@@ -4,6 +4,14 @@ import uuid
 import shutil
 import ffmpeg
 
+import os
+import sys
+
+# Add local ffmpeg binaries to PATH
+FFMPEG_DIR = os.path.join(os.path.dirname(__file__), "ffmpeg-bin")
+os.environ["PATH"] = FFMPEG_DIR + os.pathsep + os.environ["PATH"]
+
+
 TEMP_DIR = "temp_clips"
 os.makedirs(TEMP_DIR, exist_ok=True)
 
